@@ -2,49 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../Quiz 2/quiz2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../Quiz 2/quiz2.js"></script>
     <title>Quiz 2</title>
   </head>
-  <bod>
+  <body>
     <header>
-      <h1>This is the second quiz</h1
+      <h1>This is the second quiz</h1>
 
     <section id="firstSection">
       <nav>
         <ul>
           <li>
-            <a href="google.co">Google<a>
+            <a href="https://www.google.com/">Google<a>
           </li>
           <li>
-            <a href="mattbowytz.com">Class Site</a>
+            <a href="http://www.mattbowytz.com">Class Site</a>
           </li>
           <li/>
-            <a href="amazon.com">Amazon</a>
+            <a href="https://amazon.com">Amazon</a>
           </li>
         </ul>
       </nav>
     </section>
 
-    <sectio clas="dynamic"></sectio>
-
-    <section>
-      <p>This is a List<p>
+    <section class="dynamic">
+      <h2>This is a List</h2>
       <ul>
         <li>Item 1</li>
-        <a>Item 2</a>
-        </li>Item 3</li>
-        <li>Item 4</li>>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
       </ul>
     </section>
 
-    <section id="thirdSection">
+    <a id="dialog">Click here!</a><br><br>
+    <div id="dialog1" title="dialog box"style="display:none;">
+      <center>
+      <h3>JS Dialog Box</h3>
+      <p>paragraph with words </p>
+    </div>
+    </center>
 
-      <foam action="" method="get">
-        fieldset
+    <section id="thirdSection">
+      <form name="form" action="subscribe.php" method="get">
+        <fieldset>
           <label for="first_name">First Name</label>
-          <input type="txt" id="first_name">
+          <input type="text" id="first_name">
         </fieldset>
         <fieldset>
           <label for="first_name">Last Name</label>
@@ -55,18 +64,10 @@
           <input type="email" id="email_name">
         </fieldset>
         <fieldset>
-          <input type="color" value="sunbmit">
-          <input type="date" value="reset">
+          <input type="submit" name="submit" value="Subscribe">
+          <input type="reset" name="reset" value="Reset">
         </fieldset>
-      </foam>
-
+      </form>
     </section>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
-    <script>
-      (funciton() {
-        console.log('hello there!');
-      })()
-    </script>>
-
-  </bod>
+  </body>
+  </html>
